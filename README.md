@@ -30,23 +30,6 @@ implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
 runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
 ```
 
----
-
-## 🔧 실행 방법
-
-```bash
-# Oracle DB 도커 실행 (예시)
-docker run -d -p 1521:1521 --name oracle -e ORACLE_PASSWORD=1234 gvenzl/oracle-xe
-
-# 프로젝트 실행
-./gradlew bootRun
-```
-
-> 실행 후 Swagger 접속:  
-> [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-
----
-
 ## 🧪 실험 API
 
 | Method | Endpoint                  | 설명 |
