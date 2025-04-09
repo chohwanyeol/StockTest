@@ -60,6 +60,8 @@ class StocktestApplicationTests {
 			});
 		}
 
+
+
 		latch.await();
 		Integer quantity = restTemplate.getForObject(baseUrl+"/getLock", Integer.class);
 		System.out.println("✅ [낙관적 락] 최종 재고 수량: " + quantity);
